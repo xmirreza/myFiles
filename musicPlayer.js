@@ -71,7 +71,7 @@
     volume.addEventListener('input', () => {
         audio.volume = Number(volume.value);
         audio.muted = audio.volume === 0;
-        mute.textContent = audio.muted ? '×' : '';
+        mute.textContent = audio.muted ? '×' : 'l>';
     });
 
     let previousVolume = Number(volume.value);
